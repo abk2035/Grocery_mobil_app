@@ -13,19 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-       colorScheme: ColorScheme.fromSwatch(backgroundColor:const Color(0xFFFEC54B) )
-                               .copyWith(secondary: Colors.deepOrange)
-      ),
-      home: SplashScreen(),
-      routes:{
-        SignInScreen.routeName:(ctx)=>SignInScreen()
-      }
-    );
+        title: 'Grocery',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            colorScheme:
+                ColorScheme.fromSwatch(backgroundColor: const Color(0xFFFEC54B))
+                    .copyWith(secondary: Colors.deepOrange)),
+        home: SplashScreen(),
+        routes: {SignInScreen.routeName: (ctx) => SignInScreen()});
   }
 }
-
-
-
