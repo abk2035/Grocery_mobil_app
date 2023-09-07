@@ -16,6 +16,12 @@ class MyApp extends StatelessWidget {
         title: 'Grocery',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+            textTheme: TextTheme(
+              titleLarge: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 30),
+            ),
             colorScheme:
                 ColorScheme.fromSwatch(backgroundColor: const Color(0xFFFEC54B))
                     .copyWith(secondary: Colors.deepOrange)),
